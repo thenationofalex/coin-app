@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content renders 1`] = `
+<Styled(section)>
+  <h1>
+    Some content
+  </h1>
+</Styled(section)>
+`;

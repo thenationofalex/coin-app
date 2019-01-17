@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders 1`] = `
+<React.Fragment>
+  <Styled(header)>
+    <Styled(div)>
+      <Link
+        replace={false}
+        to="/"
+      >
+        <Styled(h1)>
+          blockbid
+        </Styled(h1)>
+      </Link>
+    </Styled(div)>
+  </Styled(header)>
+</React.Fragment>
+`;

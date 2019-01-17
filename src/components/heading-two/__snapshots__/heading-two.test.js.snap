@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`H2 renders 1`] = `
+<Styled(h2)>
+  Heading 2
+</Styled(h2)>
+`;

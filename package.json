@@ -1,0 +1,79 @@
+{
+  "name": "coin-app",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "start": "webpack-dev-server --hot --mode development",
+    "build": "rm -rf .dist/ && webpack --mode production",
+    "lint": "./node_modules/.bin/eslint ./src"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "dependencies": {
+    "emotion": "^9.1.3",
+    "emotion-theming": "^9.1.2",
+    "history": "^4.7.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-cryptocoins": "^1.0.11",
+    "react-dom": "^16.3.2",
+    "react-emotion": "^9.1.3",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-external-helpers": "^7.0.0-beta.47",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-standard": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "jest-fetch-mock": "^1.6.0",
+    "path": "^0.12.7",
+    "redux-saga-test-plan": "^3.6.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "jest": {
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "testMatch": [
+      "**/*.test.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "globals": {},
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg)$": "<rootDir>/tests/fileMock.js",
+      "\\.(css)$": "jest-css-modules"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
+  }
+}
